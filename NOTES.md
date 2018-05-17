@@ -4,4 +4,3 @@ reverve
 
 String
 Method that change string itself
-replace
