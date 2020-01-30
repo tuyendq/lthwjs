@@ -30,6 +30,7 @@ console.log("Counter is: " + add())
 
 console.log("Counter is: " + add())
 
+// IIFE
 var add2 = (function () {
     var counter = 0;
     return function () { 
@@ -45,3 +46,9 @@ console.log("Call add2 3rd time: " + add2())
 console.log("Counter is: " + add())
 console.log("Counter is: " + add())
 console.log("Call add2 3rd time: " + add2())
+
+var fn = function forDebugOnly(message) {
+    console.log(message);
+}
+fn("Anything here");
+// forDebugOnly(); // Use fn() to call
