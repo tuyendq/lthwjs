@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Rest parameter example
 function sendCards(day, ...cardIds) {
