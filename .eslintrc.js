@@ -1,5 +1,6 @@
 module.exports = {
     'env': {
+        'browser': true,
         'es6': true
     },
     extends: 'eslint:recommended',
@@ -20,5 +21,7 @@ module.exports = {
         'space-before-blocks': 'error',
         'keyword-spacing': 'error',
         'arrow-spacing': 'error',
+        'no-self-compare': 'error',
+        'func-names': ['error', 'as-needed'],
     },
 };
