@@ -1,13 +1,24 @@
 module.exports = {
-    env: {
-        es6: true
+    'env': {
+        'es6': true
     },
-    rules: {
+    extends: 'eslint:recommended',
+    'rules': {
         strict: ['error', 'global'],
-        'spaced-comment': ['error', 'starred-block'],
+        'multiline-comment-style': ['error', 'starred-block'],
+        'spaced-comment': ['error', 'always'],
         semi: ['error', 'always'],
         'semi-spacing': 'error',
         'no-extra-semi': 'error',
-        'quotes': ['error', 'single'],
+        'no-unexpected-multiline': 'error',
+        'max-len': ['error', {'code': 80}],
+        'comma-style': ['error', 'last'],
+        'comma-dangle': ['error', 'always-multiline'],
+        indent: ['error', 2],
+        'space-infix-ops': 'error',
+        'brace-style': 'error',
+        'space-before-blocks': 'error',
+        'keyword-spacing': 'error',
+        'arrow-spacing': 'error',
     },
 };
