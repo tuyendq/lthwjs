@@ -3,7 +3,7 @@
 
 function palindrome(str) {
   // Good luck!
-  const nonAlphanumeric = /\s+|[.,/#!$%\^&*;:{}=\-_`~()]/gi;  
+  const nonAlphanumeric = /\s+|[.,/#!$%^&*;:{}=\-_`~()]/gi;  
   let strTemp = str.replace(nonAlphanumeric, "");
   strTemp = strTemp.toLowerCase();
   if (strTemp === reverseString(strTemp)) {
