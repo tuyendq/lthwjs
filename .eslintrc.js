@@ -23,5 +23,6 @@ module.exports = {
         'arrow-spacing': 'error',
         'no-self-compare': 'error',
         'func-names': ['error', 'as-needed'],
+        'func-style': ['error', 'expression'],
     },
 };

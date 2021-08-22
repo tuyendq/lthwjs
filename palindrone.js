@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 'use strict';
 
-function palindrome(str) {
+const palindrome = function(str) {
   // Good luck!
   const nonAlphanumeric = /\s+|[.,/#!$%^&*;:{}=\-_`~()]/gi;  
   let strTemp = str.replace(nonAlphanumeric, "");
@@ -11,13 +11,13 @@ function palindrome(str) {
   } else {
     return false;
   }
-}
+};
   
-function reverseString(str) {
+const reverseString = function(str) {
   let strTemp = str.split('');  
   strTemp.reverse();
   return strTemp.join('');
-}
+};
 
 console.log(palindrome('anna'));
 console.log(palindrome('test'));
