@@ -6,11 +6,12 @@
 
 ## Style guide
 
-- ESLint
+- ESLint: [https://eslint.org](https://eslint.org)
 
 ## Technical interview
 
 - What is hoisting in Javascript?
+- What is closure?
 
 ## Courses
 

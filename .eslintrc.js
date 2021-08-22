@@ -4,6 +4,10 @@ module.exports = {
         'es6': true
     },
     extends: 'eslint:recommended',
+    parserOptions: {
+      ecmaVersion: 2018,
+      sourceType: 'module',
+    },
     'rules': {
         strict: ['error', 'global'],
         'multiline-comment-style': ['error', 'starred-block'],
@@ -24,5 +28,10 @@ module.exports = {
         'no-self-compare': 'error',
         'func-names': ['error', 'as-needed'],
         'func-style': ['error', 'expression'],
+        'no-sparse-arrays': 'error',
+        'no-template-curly-in-string': 'error',
+        'no-cond-assign': 'error',
+        'no-constant-condition': 'error',
+        'valid-typeof': 'error',
     },
 };
