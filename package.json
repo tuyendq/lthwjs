@@ -1,0 +1,23 @@
+{
+  "name": "lthwjs",
+  "version": "1.0.0",
+  "description": "- Microsoft Visual Code",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuyendq/lthwjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuyendq/lthwjs/issues"
+  },
+  "homepage": "https://github.com/tuyendq/lthwjs#readme",
+  "devDependencies": {
+    "mocha": "^9.1.0"
+  }
+}
