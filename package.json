@@ -2,9 +2,9 @@
   "name": "lthwjs",
   "version": "1.0.0",
   "description": "- Microsoft Visual Code",
-  "main": ".eslintrc.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx mocha \"./test/*.test.js\" --require @babel/register"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/tuyendq/lthwjs#readme",
   "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/register": "^7.15.3",
+    "chai": "^4.3.4",
     "mocha": "^9.1.0"
-  }
+  },
+  "type": "module"
 }
