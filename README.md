@@ -2,7 +2,8 @@
 
 ## IDE
 
-- Microsoft Visual Code
+- [Microsoft Visual Studio Code](https://code.visualstudio.com/) (Free)
+- [WebStorm by JetBrains](https://www.jetbrains.com/webstorm/) (Paid)
 
 ## Style guide
 
@@ -12,6 +13,7 @@
 
 - What is hoisting in Javascript?
 - What is closure?
+- Export / Import
 
 ## Courses
 
