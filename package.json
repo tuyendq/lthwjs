@@ -4,7 +4,7 @@
   "description": "- Microsoft Visual Code",
   "main": "index.js",
   "scripts": {
-    "test": "npx mocha \"./test/*.test.js\" --require @babel/register"
+    "test": "npx mocha \"./*.test.js\" --require @babel/register"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,8 @@
     "@babel/core": "^7.15.0",
     "@babel/register": "^7.15.3",
     "chai": "^4.3.4",
-    "mocha": "^9.1.0"
+    "mocha": "^9.1.0",
+    "nyc": "^15.1.0"
   },
   "type": "module"
 }
