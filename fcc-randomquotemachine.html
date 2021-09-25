@@ -20,23 +20,20 @@
         .catch(error => console.error('Error:', error));
 
       let numOfQuotes = (await response).quotes.length;
-      console.log("Number of quotes:", numOfQuotes);
       let randomNumber = Math.floor(Math.random(numOfQuotes) * 100);
-      console.log("Random number:", randomNumber);
-
-
-      console.log((await response).quotes[randomNumber]);
-      console.log((await response).quotes[randomNumber].quote);
-      console.log((await response).quotes[randomNumber].author);
+      // console.log("Number of quotes:", numOfQuotes);
+      // console.log("Random number:", randomNumber);
+      // console.log((await response).quotes[randomNumber]);
+      // console.log((await response).quotes[randomNumber].quote);
+      // console.log((await response).quotes[randomNumber].author);
       return (await response).quotes[randomNumber];
     }
 
     async function renewQuote() {
       let quote = await getQuote();
-      console.log("Random quote:", quote);
       document.getElementById("text").innerHTML = quote.quote;
       document.getElementById("author").innerHTML = "&mdash; " + quote.author;
-      document.getElementById("tweet-quote").setAttribute("href", "https://twitter.com/intent/tweet?text=" + quote.quote + " " + quote.author);
+      document.getElementById("tweet-quote").setAttribute("href", "https://twitter.com/intent/tweet?text=" + encodeURIComponent(quote.quote) + " " + encodeURIComponent(quote.author));
     }
   </script>
 </head>
